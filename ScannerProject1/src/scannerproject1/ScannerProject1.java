@@ -1,20 +1,66 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package scannerproject1;
 
-/**
- *
- * @author HP
- */
+import java.util.Scanner;
+
+
 public class ScannerProject1 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+// Addition
+//Scanner input=new Scanner(System.in);
+//        System.out.println("Enter your First Number");
+//        int input1=input.nextInt();
+//        System.out.println("Enter your Last Number");
+//        int input2=input.nextInt();
+//        
+//        float result=input1+input2;
+//        System.out.println("The Result is "+result);
+   
+
+
+//Subtraction
+// Scanner input=new Scanner(System.in);
+//        System.out.println("Enter your First Number");
+//        int input1=input.nextInt();
+//        System.out.println("Enter your Last Number");
+//        int input2=input.nextInt();
+//        
+//        float result=input1-input2;
+//        System.out.println("The Result is "+result);
+  
+
+//Multiplication
+//Scanner input=new Scanner(System.in);
+//        System.out.println("Enter your First Number");
+//        int input1=input.nextInt();
+//        System.out.println("Enter your Last Number");
+//        int input2=input.nextInt();
+//        
+//        float result=input1*input2;
+//        System.out.println("The Result is "+result);
+        
+//  Division      
+//Scanner input=new Scanner(System.in);
+//        System.out.println("Enter your First Number");
+//        int input1=input.nextInt();
+//        System.out.println("Enter your Last Number");
+//        int input2=input.nextInt();
+//        
+//        float result=input1/input2;
+//        System.out.println("The Result is "+result);
+
+
+//Modulus
+Scanner input=new Scanner(System.in);
+        System.out.println("Enter your First Number");
+        int input1=input.nextInt();
+        System.out.println("Enter your Last Number");
+        int input2=input.nextInt();
+        
+        float result=input1%input2;
+        System.out.println("The Result is "+result); 
     }
     
 }
