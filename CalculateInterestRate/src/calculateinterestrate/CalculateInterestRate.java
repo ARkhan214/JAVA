@@ -27,8 +27,8 @@ public class CalculateInterestRate {
         
         double totalPayment=monthlyPayment*numberofYear*12;
         
-        System.out.println("The monthly payment  "+(int)monthlyPayment+" taka");
-        System.out.println("The total Payment "+(int)totalPayment+" taka");
+        System.out.println("The monthly payment  "+monthlyPayment+" taka");
+        System.out.println("The total Payment "+totalPayment+" taka");
         
         
         
