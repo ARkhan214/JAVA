@@ -74,7 +74,7 @@ public class ForLoop {
             }
           }
           
-          else{System.out.println(input+" normal number");}
+//          else{System.out.println(input+" negative number");}
           
       
       
