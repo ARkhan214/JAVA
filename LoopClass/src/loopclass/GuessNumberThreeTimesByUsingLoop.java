@@ -8,35 +8,29 @@ public class GuessNumberThreeTimesByUsingLoop {
     public static void main(String[] args) {
 
         //range 0 to 9       
-         int randomNumber=(int)(Math.random()*10);
-         System.out.println(randomNumber);
-         
-        Scanner inp=new Scanner(System.in);
-        
+        int randomNumber = (int) (Math.random() * 10);
+        System.out.println(randomNumber);
+        Scanner inp = new Scanner(System.in);
         System.out.println("Enter number");
-        int input=inp.nextInt();
-        
-       
-        
-        int count=1;
-        boolean isGuess=false;
-        
-        while (count<3) {
-//            System.out.println("Enter your guess number");
+        int input = inp.nextInt();
+        int count = 1;
+        boolean isGuess = false;
 
-            if (randomNumber==input) {
-                System.out.println("Your Win");                
+        while (count < 3) {
+
+//            System.out.println("Enter your guess number");
+            if (randomNumber == input) {
+                System.out.println("Your Win");
+                isGuess = true;
                 break;
-            }
-            else if (randomNumber<input) {
-                 System.out.println("Your guess number is High");
+            } else if (randomNumber < input) {
+                System.out.println("Your guess number is High");
                 System.out.println("Enter your guess number");
-                input=inp.nextInt();
-            }
-            else if (randomNumber>input) {
-                 System.out.println("Your guess number is Lower");
+//                input=inp.nextInt();
+            } else if (randomNumber > input) {
+                System.out.println("Your guess number is Lower");
                 System.out.println("Enter your guess number");
-                input=inp.nextInt();
+//                input=inp.nextInt();
             }
             if (isGuess) {
                 System.out.println("Sorry!! Try next time");
@@ -44,6 +38,44 @@ public class GuessNumberThreeTimesByUsingLoop {
             count++;
 
         }
+        inp.close();
+        
+        
+//        Scanner s = new Scanner(System.in);
+//        int randomNumber = (int) (Math.random() * 10); // generates number from 0 to 9
+//        
+//        System.out.println("Guess "+ randomNumber);
+//
+//        System.out.println("Guess a number between 0 and 9. You have 3 attempts.");
+//
+//        int attempts = 0;
+//        boolean isGuessed = false;
+//
+//        while (attempts < 3) {
+//            System.out.print("Enter your guess: ");
+//            int userInput = s.nextInt();
+//
+//            if (userInput == randomNumber) {
+//                System.out.println("You Win!");
+//                 isGuessed = true;
+//                break;
+//            } else if (userInput < randomNumber) {
+//                System.out.println("Too low!");
+//               
+//            } else {
+//                System.out.println("Too high!");
+//            }
+//
+//            attempts++;
+//        }
+//
+//        if (!isGuessed) {
+//            System.out.println("Better Luck Next Time! The correct number was: " + randomNumber);
+//        }
+        // s.close();
+        
+        
+        
         //range 0 to 100 
 //        int randomNumber=(int)(Math.random()*101);  //erokom thakle random number agae print hobe.
 //         System.out.println(randomNumber);
@@ -85,10 +117,6 @@ public class GuessNumberThreeTimesByUsingLoop {
 //        do { sum += i; i++; } 
 //        while (i <= 5); 
 //        System.out.println("Sum of numbers from 1 to 5 is: " + sum);
-
-
-
-
 //        Scanner s = new Scanner(System.in);
 //        int input =s.nextInt();
 //        int count = 1;
