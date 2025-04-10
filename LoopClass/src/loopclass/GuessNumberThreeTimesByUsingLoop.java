@@ -8,37 +8,82 @@ public class GuessNumberThreeTimesByUsingLoop {
     public static void main(String[] args) {
 
         //range 0 to 9       
-        int randomNumber = (int) (Math.random() * 10);
+       
+        
+        Scanner inpu = new Scanner(System.in);
+       
+         int randomNumber = (int) (Math.random() * 10);
         System.out.println(randomNumber);
-        Scanner inp = new Scanner(System.in);
-        System.out.println("Enter number");
-        int input = inp.nextInt();
-        int count = 1;
-        boolean isGuess = false;
+        
+        System.out.println("Enter Guess number 0 to 9");
+        
+        
+        int count = 0;
+        boolean isGuessed = false;
 
-        while (count < 3) {
-
-//            System.out.println("Enter your guess number");
+        while (count<3) {            
+            System.out.println("Enter your guess number");
+            int input = inpu.nextInt(); 
+            
             if (randomNumber == input) {
                 System.out.println("Your Win");
-                isGuess = true;
+                isGuessed = true;
                 break;
             } else if (randomNumber < input) {
                 System.out.println("Your guess number is High");
-                System.out.println("Enter your guess number");
-//                input=inp.nextInt();
-            } else if (randomNumber > input) {
+            } else{
                 System.out.println("Your guess number is Lower");
-                System.out.println("Enter your guess number");
-//                input=inp.nextInt();
             }
-            if (isGuess) {
-                System.out.println("Sorry!! Try next time");
-            }
+          
             count++;
 
         }
-        inp.close();
+        
+          if (!isGuessed) {
+                System.out.println("Sorry!! Try next time");
+            }
+        inpu.close();
+
+
+
+//Scanner inp = new Scanner(System.in);
+//        int randomNumber = (int) (Math.random() * 10); // generates number from 0 to 9
+////        
+//        System.out.println(randomNumber);
+////
+//        System.out.println("Guess a number between 0 and 9. You have 3 attempts.");
+////
+//        int count = 0;
+//        boolean isGuessed = false;
+//
+//        while (count < 3) {
+//            System.out.print("Enter your guess: ");
+//            int userInput = s.nextInt();
+//
+//            if (userInput == randomNumber) {
+//                System.out.println("You Win!");
+//                 isGuessed = true;
+//                break;
+//            } else if (userInput < randomNumber) {
+//                System.out.println("Too low!");
+//               
+//            } else {
+//                System.out.println("Too high!");
+//            }
+//
+//            count++;
+//        }
+//
+//        if (!isGuessed) {
+//            System.out.println("Better Luck Next Time! The correct number was: " + randomNumber);
+//        }
+        // s.close();
+
+
+
+
+
+
         
         
 //        Scanner s = new Scanner(System.in);
