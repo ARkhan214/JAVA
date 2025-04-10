@@ -2,7 +2,7 @@ package forloop;
 
 import java.util.Scanner;
 
-public class ForLoop {
+public class PrimeNumberUsingForLoop {
 
     public static void main(String[] args) {
 
