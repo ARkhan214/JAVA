@@ -47,7 +47,7 @@ Scanner s=new Scanner(System.in);
             do {                
                long finreg= factorial*=count;
                 count++;
-                result=" "+finreg;
+                result="Factorial is "+finreg;
             } while (count<=input);
             
         }
