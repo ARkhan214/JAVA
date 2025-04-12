@@ -41,7 +41,7 @@ Scanner s=new Scanner(System.in);
     int factorial=1;
     
         if (input<0) {
-            result=input+" Enter posative value";            
+            result=input+" is not a posative value please Enter posative value";            
         }
         else{
             do {                
