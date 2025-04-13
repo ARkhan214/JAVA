@@ -10,6 +10,7 @@ public class LearnMethodOverloading {
         Scanner s = new Scanner(System.in);
         System.out.println("Enter how many times you want put value.");
         int n = s.nextInt();
+        
         int[] myArray = new int[n];
 //
         for (int i = 0; i < n; i++) {
