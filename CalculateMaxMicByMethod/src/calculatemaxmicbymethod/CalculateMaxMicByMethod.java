@@ -13,6 +13,7 @@ public class CalculateMaxMicByMethod {
         System.out.println("Enter limit");
         int size=s.nextInt();
         String result=doMaxMin(size);
+        System.out.println(result);
         
         
 //        System.out.println("Enter limit");
