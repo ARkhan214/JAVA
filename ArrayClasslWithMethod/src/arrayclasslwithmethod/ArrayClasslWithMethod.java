@@ -1,4 +1,3 @@
-
 package arrayclasslwithmethod;
 
 import java.util.Arrays;
@@ -7,7 +6,7 @@ import java.util.Scanner;
 public class ArrayClasslWithMethod {
 
     public static void main(String[] args) {
-         Scanner s = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.println("Enter how many times you want put value.");
         int n = s.nextInt();
         String[] myArray = new String[n];
@@ -20,8 +19,8 @@ public class ArrayClasslWithMethod {
 //                myArray[i] = null;
 //                break;
 //            }
-         if (myArray[i].equalsIgnoreCase("=")) {
-                myArray[i] =null;
+            if (myArray[i].equalsIgnoreCase("=")) {
+                myArray[i] = null;
                 break;
             }
 
@@ -30,25 +29,22 @@ public class ArrayClasslWithMethod {
 //                break;
 //            }
 //        }
-        
-        
-        
 //        doSum(myArray);
 //System.out.println(myArray);
- System.out.println(Arrays.toString(myArray));
+            System.out.println(Arrays.toString(myArray));
 
-        
+        }
+
     }
-    
-//     public static int doSum(int... b){
-//    int sum=0;
-//   
-//    for(int item : b){
-//        sum+=item;
-//    }
-////        System.out.println(sum);
-//
-//return sum;
-//    }
+
+    public static int doSum(int... b) {
+        int sum = 0;
+
+        for (int item : b) {
+            sum += item;
+        }
+//        System.out.println(sum);
+
+        return sum;}
     
 }
