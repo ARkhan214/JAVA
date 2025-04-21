@@ -7,26 +7,63 @@ import java.util.Scanner;
 public class ClassTest {
 
     public static void main(String[] args) {
-        //prime number
+        //Bubble Sort
+        
         Scanner s = new Scanner(System.in);
 
-        System.out.println("Enter number ");
-        int input = s.nextInt();
+        System.out.println("Enter Array Size ");
+        int size = s.nextInt();
 
-        int count = 0;
+        int[] myArray = new int[size];
 
-        for (int i = 1; i <= input; i++) {
-            if (input % i == 0) {
-                count++;
+        for (int index = 0; index < myArray.length; index++) {
+            System.out.println("Enter value " + (index + 1));
+            int userInput = s.nextInt();
+            myArray[index] = userInput;
+
+        }
+        System.out.println("------------------------------");
+        System.out.println("Before Sorting " + Arrays.toString(myArray));
+
+        for (int round = 0; round < myArray.length - 1; round++) {
+            for (int step = 0; step < myArray.length - round - 1; step++) {
+                if (myArray[step] > myArray[step + 1]) {
+                    int temp = myArray[step];
+                    myArray[step] = myArray[step + 1];
+                    myArray[step + 1] = temp;
+
+                }
             }
         }
 
-        if (count == 2) {
-            System.out.println(input + " it is Prime Number ");
-        } else {
-            System.out.println(input + " it is Not Prime Number ");
-
-        }
+        System.out.println("After Sorting " + Arrays.toString(myArray));
+        
+        
+        
+        
+        
+        
+        
+        //prime number
+//        Scanner s = new Scanner(System.in);
+//
+//        System.out.println("Enter number ");
+//        int input = s.nextInt();
+//
+//        int count = 0;
+//
+//        for (int i = 1; i <= input; i++) {
+//            if (input % i == 0) {
+//                count++;
+//            }
+//        }
+//
+//        if (count == 2) {
+//            System.out.println(input + " it is Prime Number ");
+//        } else {
+//            System.out.println(input + " it is Not Prime Number ");
+//
+//        }
         
         
         
@@ -74,36 +111,7 @@ public class ClassTest {
 
 
 
-        //Bubble Sort
         
-//        Scanner s = new Scanner(System.in);
-//
-//        System.out.println("Enter Array Size ");
-//        int size = s.nextInt();
-//
-//        int[] myArray = new int[size];
-//
-//        for (int index = 0; index < myArray.length; index++) {
-//            System.out.println("Enter value " + (index + 1));
-//            int userInput = s.nextInt();
-//            myArray[index] = userInput;
-//
-//        }
-//        System.out.println("------------------------------");
-//        System.out.println("Before Sorting " + Arrays.toString(myArray));
-//
-//        for (int round = 0; round < myArray.length - 1; round++) {
-//            for (int step = 0; step < myArray.length - round - 1; step++) {
-//                if (myArray[step] > myArray[step + 1]) {
-//                    int temp = myArray[step];
-//                    myArray[step] = myArray[step + 1];
-//                    myArray[step + 1] = temp;
-//
-//                }
-//            }
-//        }
-//
-//        System.out.println("After Sorting " + Arrays.toString(myArray));
 
 
 
