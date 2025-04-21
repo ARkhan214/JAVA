@@ -9,34 +9,34 @@ public class ClassTest {
     public static void main(String[] args) {
         //Bubble Sort
         
-        Scanner s = new Scanner(System.in);
-
-        System.out.println("Enter Array Size ");
-        int size = s.nextInt();
-
-        int[] myArray = new int[size];
-
-        for (int index = 0; index < myArray.length; index++) {
-            System.out.println("Enter value " + (index + 1));
-            int userInput = s.nextInt();
-            myArray[index] = userInput;
-
-        }
-        System.out.println("------------------------------");
-        System.out.println("Before Sorting " + Arrays.toString(myArray));
-
-        for (int round = 0; round < myArray.length - 1; round++) {
-            for (int step = 0; step < myArray.length - round - 1; step++) {
-                if (myArray[step] > myArray[step + 1]) {
-                    int temp = myArray[step];
-                    myArray[step] = myArray[step + 1];
-                    myArray[step + 1] = temp;
-
-                }
-            }
-        }
-
-        System.out.println("After Sorting " + Arrays.toString(myArray));
+//        Scanner s = new Scanner(System.in);
+//
+//        System.out.println("Enter Array Size ");
+//        int size = s.nextInt();
+//
+//        int[] myArray = new int[size];
+//
+//        for (int index = 0; index < myArray.length; index++) {
+//            System.out.println("Enter value " + (index + 1));
+//            int userInput = s.nextInt();
+//            myArray[index] = userInput;
+//
+//        }
+//        System.out.println("------------------------------");
+//        System.out.println("Before Sorting " + Arrays.toString(myArray));
+//
+//        for (int round = 0; round < myArray.length - 1; round++) {
+//            for (int step = 0; step < myArray.length - round - 1; step++) {
+//                if (myArray[step] > myArray[step + 1]) {
+//                    int temp = myArray[step];
+//                    myArray[step] = myArray[step + 1];
+//                    myArray[step + 1] = temp;
+//
+//                }
+//            }
+//        }
+//
+//        System.out.println("After Sorting " + Arrays.toString(myArray));
         
         
         
@@ -117,7 +117,7 @@ public class ClassTest {
 
 
 
-        //max min
+                        //max min
         
 //        Scanner s = new Scanner(System.in);
 //        System.out.print("Enter How Many Number Do You Want To Compare: ");
@@ -147,7 +147,7 @@ public class ClassTest {
 
 
 
-        //Fibonacci Find 
+                     //Fibonacci Find 
         
 //        Scanner s = new Scanner(System.in);
 //        System.out.print("Enter number of Fibonacci terms: ");
@@ -178,7 +178,7 @@ public class ClassTest {
 //        System.out.println(Arrays.toString(fibArray));
 //        
 //        
-//        
+//                      //Fibonacci Find
 //        
 //        Scanner input = new Scanner(System.in);
 //
@@ -213,29 +213,37 @@ public class ClassTest {
 
 
 
-
+                    //Fibonacci Find
 
 //        System.out.println(result);
-//        Scanner s = new Scanner(System.in);
-//        System.out.println("enter number");
-//        int size=s.nextInt();        
-//        
-//        int[] myArra=new int[size];
-////        int n1=0;
-////        int n2=1;
+        Scanner s = new Scanner(System.in);
+        System.out.println("enter number");
+        int size=s.nextInt();        
+        
+        int[] myArra=new int[size];
+//        int n1=0;
+//        int n2=1;
+         myArra[0] = 0;
+         myArra[1] = 1;
 //         if (size >= 1) myArra[0] = 0;
 //        if (size >= 2) myArra[1] = 1;
-//        
-////        System.out.println(Arrays.toString(myArra));
-//        
-//        for (int i = 2; i <= myArra.length-1; i++) {
-//           
-//           myArra[i]=myArra[i-1]+myArra[i-2];
-//            
-//        }
+        
 //        System.out.println(Arrays.toString(myArra));
+        
+        for (int i = 2; i <= myArra.length-1; i++) {
+           
+           myArra[i]=myArra[i-1]+myArra[i-2];
+            
+        }
+        System.out.println(Arrays.toString(myArra));
+        
+        
+        
+        
+        
+        
 //        Scanner s = new Scanner(System.in);
-//
+
 //        System.out.println("Enter Any number to Fnd Fibonacci");
 //        int userInput = s.nextInt();
 //

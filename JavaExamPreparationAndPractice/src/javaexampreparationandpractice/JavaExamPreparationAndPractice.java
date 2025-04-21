@@ -6,20 +6,39 @@ import java.util.Scanner;
 public class JavaExamPreparationAndPractice {
 
     public static void main(String[] args) {
-        //factorial
-          Scanner n=new Scanner(System.in);
+        //Fibonacci Calculate using array
+        Scanner j=new Scanner(System.in);
         
-        System.out.println("Enter numbar to Check factorial");
-        int input=n.nextInt();
+        System.out.println("Enter number to check Fibonacci");
+        int input=j.nextInt();
         
-        int factorial=1;//1,2,6,24,120,720
-      
-                    //1,2,3,4,5,6
-        for (int i = 1; i <= input; i++) {
-            factorial *= i;//1,2,3,4,5,6
-            //1,2,6,24,120,720
+        int[] myArray=new int[input];
+            myArray[0]=0;
+            myArray[1]=1;
+            
+            for (int i = 2; i < myArray.length; i++) {
+            
         }
-        System.out.println("Factorial is "+factorial);
+        
+        
+        
+        
+        
+        
+        //factorial
+//          Scanner n=new Scanner(System.in);
+//        
+//        System.out.println("Enter numbar to Check factorial");
+//        int input=n.nextInt();
+//        
+//        int factorial=1;//1,2,6,24,120,720
+//      
+//                    //1,2,3,4,5,6
+//        for (int i = 1; i <= input; i++) {
+//            factorial *= i;//1,2,3,4,5,6
+//            //1,2,6,24,120,720
+//        }
+//        System.out.println("Factorial is "+factorial);
         
         
         
