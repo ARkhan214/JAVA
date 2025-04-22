@@ -14,7 +14,10 @@ public class CalculateMaxMicByMethod {
         int size=s.nextInt();
         String result=doMaxMin(size);
         System.out.println(result);
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
         
 //        System.out.println("Enter limit");
 //        int size=s.nextInt();
@@ -65,6 +68,7 @@ public class CalculateMaxMicByMethod {
             int userInput=s.nextInt();
             numbers[index]=userInput;
         }
+        
         System.out.println("My number are "+Arrays.toString(numbers));
         
            int maxNumber=numbers[0];
